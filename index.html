@@ -8,23 +8,23 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700;800&family=Inter:wght@400;600;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700;800&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <div class="site-shell">
+    <div class="page">
       <header class="topbar">
         <div class="brandline">
-          <span class="brand-main">blades</span>
-          <span class="brand-sep">—</span>
-          <span class="brand-accent">personal</span>
+          <span class="brand-main">tpm</span>
+          <span class="brand-dash">—</span>
+          <span class="brand-accent">dnd</span>
         </div>
-        <div class="top-actions">
-          <a href="#home" class="top-link active">home</a>
-          <a href="#portfolio" class="top-link">portfolio</a>
-        </div>
+        <nav class="nav">
+          <a class="nav-link active" href="#home">home</a>
+          <a class="nav-link" href="#archive">archive</a>
+        </nav>
       </header>
 
       <div class="terminal-line" id="home">
@@ -33,124 +33,116 @@
         <span class="cursor"></span>
       </div>
 
-      <main class="layout-grid">
-        <aside class="left-column">
-          <section class="panel intro-panel reveal">
-            <div class="intro-row">
-              <div class="avatar-box">B</div>
-              <div>
-                <h1>sup, im blades</h1>
-                <p class="muted large">competitive player</p>
-                <p class="muted">personal site with ranks, settings, and portfolio placeholders.</p>
-              </div>
+      <main class="grid">
+        <section class="card intro-card reveal">
+          <div class="intro-layout">
+            <div class="avatar">B</div>
+            <div>
+              <h1>sup, im blades</h1>
+              <p class="subtle accent-line">competitive player</p>
+              <p class="subtle">personal site with ranks, settings, and portfolio placeholders.</p>
             </div>
-          </section>
+          </div>
+        </section>
 
-          <section class="panel reveal delay-1">
-            <h2>info</h2>
-            <div class="stack-text">
-              <p>focus: fps / comp</p>
-              <p>style: terminal minimal</p>
-              <p>theme: dark purple</p>
-            </div>
-          </section>
+        <section class="card reveal delay-1">
+          <h2>about</h2>
+          <div class="inner-box">
+            ascendant valorant player with competitive settings and a clean minimal setup.
+          </div>
+        </section>
 
-          <section class="panel reveal delay-2">
-            <h2>gear</h2>
-            <div class="stack-text">
-              <p>logitech g pro x superlight 2</p>
-              <p>wooting 80he</p>
-              <p>samsung g60d oled</p>
-            </div>
-          </section>
-        </aside>
+        <section class="card reveal delay-1">
+          <h2>info</h2>
+          <div class="stack-list">
+            <p>focus: fps / comp</p>
+            <p>style: terminal minimal</p>
+            <p>theme: dark purple</p>
+          </div>
+        </section>
 
-        <section class="right-column">
-          <section class="panel reveal delay-1">
-            <h2>about</h2>
-            <div class="inline-box">
-              ascendant valorant player with competitive settings and a clean minimal setup.
-            </div>
-          </section>
-
-          <section class="panel reveal delay-2" id="ranks">
-            <h2>ranks</h2>
-            <div class="pill-row">
-              <span class="mini-pill active">valorant</span>
-              <span class="mini-pill">faceit</span>
-              <span class="mini-pill">rocket league</span>
-              <span class="mini-pill">r6</span>
-            </div>
-            <div class="stats-grid">
-              <div class="stat-box">
+        <section class="card wide-card reveal delay-2">
+          <h2>ranks</h2>
+          <div class="tag-row">
+            <span class="tag active">valorant</span>
+            <span class="tag">faceit</span>
+            <span class="tag">rocket league</span>
+            <span class="tag">r6</span>
+          </div>
+          <div class="friend-panel">
+            <div class="rank-grid">
+              <div class="mini-card">
                 <span>valorant</span>
                 <strong>ascendant 1</strong>
               </div>
-              <div class="stat-box">
+              <div class="mini-card">
                 <span>faceit</span>
                 <strong>level 9</strong>
               </div>
-              <div class="stat-box">
+              <div class="mini-card">
                 <span>rocket league</span>
                 <strong>champion 2</strong>
               </div>
-              <div class="stat-box">
+              <div class="mini-card">
                 <span>rainbow six siege</span>
                 <strong>champion</strong>
               </div>
             </div>
-          </section>
+          </div>
+        </section>
 
-          <section class="panel reveal delay-3" id="settings">
-            <h2>settings</h2>
-            <div class="settings-grid">
-              <div class="subpanel">
-                <h3>in-game</h3>
-                <div class="setting-row"><span>valorant sens</span><strong>0.3</strong></div>
-                <div class="setting-row"><span>r6 sens</span><strong>6 / 6</strong></div>
-                <div class="setting-row"><span>faceit / cs sens</span><strong>1.25</strong></div>
-              </div>
-              <div class="subpanel music-panel">
-                <h3>setup</h3>
-                <div class="visualizer">
-                  <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
-                </div>
-                <div class="player-bar"></div>
-                <div class="player-controls">
-                  <button type="button">prev</button>
-                  <button type="button">pause</button>
-                  <button type="button">next</button>
-                </div>
+        <section class="card reveal delay-2">
+          <h2>socials</h2>
+          <div class="stack-list dimmed">
+            <p>links removed for now</p>
+            <p>add socials later if wanted</p>
+            <p>github / discord / x / twitch</p>
+          </div>
+        </section>
+
+        <section class="card wide-card reveal delay-3" id="archive">
+          <h2>settings + setup</h2>
+          <div class="settings-wrap">
+            <div class="settings-box">
+              <h3>settings</h3>
+              <div class="setting-line"><span>valorant sens</span><strong>0.3</strong></div>
+              <div class="setting-line"><span>r6 sens</span><strong>6 / 6</strong></div>
+              <div class="setting-line"><span>faceit / cs sens</span><strong>1.25</strong></div>
+            </div>
+            <div class="settings-box">
+              <h3>gear</h3>
+              <div class="setting-line"><span>mouse</span><strong>logitech g pro x superlight 2</strong></div>
+              <div class="setting-line"><span>keyboard</span><strong>wooting 80he</strong></div>
+              <div class="setting-line"><span>monitor</span><strong>samsung g60d oled</strong></div>
+            </div>
+          </div>
+        </section>
+
+        <section class="card wide-card reveal delay-3">
+          <h2>portfolio</h2>
+          <div class="portfolio-grid">
+            <div class="project">
+              <span>01</span>
+              <div>
+                <strong>coming soon</strong>
+                <p>replace with your first featured project.</p>
               </div>
             </div>
-          </section>
-
-          <section class="panel reveal delay-3" id="portfolio">
-            <h2>portfolio</h2>
-            <div class="portfolio-list">
-              <div class="portfolio-item">
-                <span>01</span>
-                <div>
-                  <strong>coming soon</strong>
-                  <p>replace with your first featured project.</p>
-                </div>
-              </div>
-              <div class="portfolio-item">
-                <span>02</span>
-                <div>
-                  <strong>coming soon</strong>
-                  <p>replace with edits, designs, or another project.</p>
-                </div>
-              </div>
-              <div class="portfolio-item">
-                <span>03</span>
-                <div>
-                  <strong>coming soon</strong>
-                  <p>replace with any highlight you want to showcase.</p>
-                </div>
+            <div class="project">
+              <span>02</span>
+              <div>
+                <strong>coming soon</strong>
+                <p>replace with edits, designs, or another project.</p>
               </div>
             </div>
-          </section>
+            <div class="project">
+              <span>03</span>
+              <div>
+                <strong>coming soon</strong>
+                <p>replace with any highlight you want to showcase.</p>
+              </div>
+            </div>
+          </div>
         </section>
       </main>
     </div>
