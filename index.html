@@ -3,11 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Blades — Personal Website</title>
-    <meta
-      name="description"
-      content="Blades personal website — portfolio, game ranks, settings, and setup."
-    />
+    <title>Blades</title>
+    <meta name="description" content="Blades personal website." />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -17,127 +14,126 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <div class="background-glow glow-1"></div>
-    <div class="background-glow glow-2"></div>
-    <div class="grid-overlay"></div>
+    <div class="bg-orb orb-1"></div>
+    <div class="bg-orb orb-2"></div>
+    <div class="noise"></div>
 
-    <header class="site-header">
-      <a href="#home" class="brand">blades</a>
-      <nav class="nav">
-        <a href="#portfolio">Portfolio</a>
-        <a href="#ranks">Ranks</a>
-        <a href="#settings">Settings</a>
-      </nav>
-    </header>
+    <main class="shell">
+      <section class="profile-card reveal">
+        <div class="avatar-wrap">
+          <div class="avatar-ring"></div>
+          <div class="avatar">B</div>
+        </div>
 
-    <main>
-      <section class="hero section" id="home">
-        <div class="hero-content reveal">
-          <p class="eyebrow">personal site / portfolio / gaming</p>
-          <h1>Blades</h1>
-          <div class="hero-actions">
-            <a class="button primary" href="#ranks">View Ranks</a>
-            <a class="button secondary" href="#portfolio">View Portfolio</a>
+        <p class="mini-label">competitive / personal / setup</p>
+        <h1>Blades</h1>
+        <p class="presence">active</p>
+
+        <div class="cta-row">
+          <a href="#ranks" class="pill primary">Ranks</a>
+          <a href="#setup" class="pill">Setup</a>
+          <a href="#portfolio" class="pill">Portfolio</a>
+        </div>
+      </section>
+
+      <section class="panel reveal delay-1" id="ranks">
+        <div class="panel-head">
+          <p class="mini-label">ranks</p>
+          <h2>Competitive</h2>
+        </div>
+        <div class="rank-list">
+          <div class="row-item">
+            <span>Valorant</span>
+            <strong>Ascendant 1</strong>
+          </div>
+          <div class="row-item">
+            <span>Faceit</span>
+            <strong>Level 9</strong>
+          </div>
+          <div class="row-item">
+            <span>Rocket League</span>
+            <strong>Champion 2</strong>
+          </div>
+          <div class="row-item">
+            <span>Rainbow Six Siege</span>
+            <strong>Champion</strong>
           </div>
         </div>
-        <div class="hero-card reveal delay-1">
-          <div class="status-pill">● active</div>
-          <h2>Quick Info</h2>
-          <ul class="quick-list">
-            <li><span>Style</span><strong>Dark Purple</strong></li>
-            <li><span>Focus</span><strong>Competitive Gaming</strong></li>
-            <li><span>Setup</span><strong>Performance + Clean</strong></li>
-          </ul>
-        </div>
       </section>
 
-      <section class="section" id="portfolio">
-        <div class="section-heading reveal">
-          <p class="eyebrow">portfolio</p>
-          <h2>Featured Work</h2>
-          <p>Portfolio placeholders ready to be replaced with your real projects later.</p>
-        </div>
-        <div class="card-grid portfolio-grid">
-          <article class="card reveal">
-            <span class="card-tag">Project 01</span>
-            <h3>Coming Soon</h3>
-            <p>Replace this card with your first real project, page, or featured work.</p>
-            <a href="#">Placeholder</a>
-          </article>
-          <article class="card reveal delay-1">
-            <span class="card-tag">Project 02</span>
-            <h3>Coming Soon</h3>
-            <p>Replace this card with edits, designs, commissions, or development work.</p>
-            <a href="#">Placeholder</a>
-          </article>
-          <article class="card reveal delay-2">
-            <span class="card-tag">Project 03</span>
-            <h3>Coming Soon</h3>
-            <p>Replace this card with content creation, media, or another highlight.</p>
-            <a href="#">Placeholder</a>
-          </article>
-        </div>
-      </section>
-
-      <section class="section" id="ranks">
-        <div class="section-heading reveal">
-          <p class="eyebrow">competitive</p>
-          <h2>Game Ranks</h2>
-          <p>Current competitive ranks.</p>
-        </div>
-        <div class="card-grid stats-grid four-grid">
-          <article class="stat-card reveal">
-            <span class="game-name">VALORANT</span>
-            <strong>Ascendant 1</strong>
-            <p>Current rank.</p>
-          </article>
-          <article class="stat-card reveal delay-1">
-            <span class="game-name">FACEIT</span>
-            <strong>Level 9</strong>
-            <p>Competitive level.</p>
-          </article>
-          <article class="stat-card reveal delay-2">
-            <span class="game-name">Rocket League</span>
-            <strong>Champion 2</strong>
-            <p>Ranked placement.</p>
-          </article>
-          <article class="stat-card reveal delay-3">
-            <span class="game-name">Rainbow Six Siege</span>
-            <strong>Champion</strong>
-            <p>Peak competitive rank.</p>
-          </article>
-        </div>
-      </section>
-
-      <section class="section" id="settings">
-        <div class="section-heading reveal">
-          <p class="eyebrow">setup</p>
+      <section class="panel reveal delay-2" id="setup">
+        <div class="panel-head">
+          <p class="mini-label">settings</p>
           <h2>Settings & Gear</h2>
-          <p>Main in-game settings and setup.</p>
         </div>
-        <div class="settings-layout">
-          <article class="settings-card reveal">
+        <div class="split-grid">
+          <div class="subpanel">
             <h3>Game Settings</h3>
-            <ul>
-              <li><span>VALORANT Sens</span><strong>0.3</strong></li>
-              <li><span>R6 Sens</span><strong>6 / 6</strong></li>
-              <li><span>Faceit / CS Sens</span><strong>1.25</strong></li>
-            </ul>
-          </article>
-          <article class="settings-card reveal delay-1">
+            <div class="row-item">
+              <span>Valorant Sens</span>
+              <strong>0.3</strong>
+            </div>
+            <div class="row-item">
+              <span>R6 Sens</span>
+              <strong>6 / 6</strong>
+            </div>
+            <div class="row-item">
+              <span>Faceit / CS Sens</span>
+              <strong>1.25</strong>
+            </div>
+          </div>
+
+          <div class="subpanel">
             <h3>Gear</h3>
-            <ul>
-              <li><span>Mouse</span><strong>Logitech G Pro X Superlight 2</strong></li>
-              <li><span>Keyboard</span><strong>Wooting 80HE</strong></li>
-              <li><span>Monitor</span><strong>Samsung G60D OLED</strong></li>
-            </ul>
-          </article>
+            <div class="row-item">
+              <span>Mouse</span>
+              <strong>Logitech G Pro X Superlight 2</strong>
+            </div>
+            <div class="row-item">
+              <span>Keyboard</span>
+              <strong>Wooting 80HE</strong>
+            </div>
+            <div class="row-item">
+              <span>Monitor</span>
+              <strong>Samsung G60D OLED</strong>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="panel reveal delay-3" id="portfolio">
+        <div class="panel-head">
+          <p class="mini-label">portfolio</p>
+          <h2>Featured Work</h2>
+        </div>
+        <div class="portfolio-stack">
+          <div class="project-card">
+            <span>01</span>
+            <div>
+              <h3>Coming Soon</h3>
+              <p>Replace with your first featured project.</p>
+            </div>
+          </div>
+          <div class="project-card">
+            <span>02</span>
+            <div>
+              <h3>Coming Soon</h3>
+              <p>Replace with edits, designs, or commissions.</p>
+            </div>
+          </div>
+          <div class="project-card">
+            <span>03</span>
+            <div>
+              <h3>Coming Soon</h3>
+              <p>Replace with another highlight from your work.</p>
+            </div>
+          </div>
         </div>
       </section>
     </main>
 
-    <footer class="site-footer">
-      <p>© <span id="year"></span> Blades.</p>
+    <footer class="footer">
+      <p>© <span id="year"></span> Blades</p>
     </footer>
 
     <script src="script.js"></script>
